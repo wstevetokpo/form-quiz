@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Quiz</title>
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/default.css" id="defaultscheme">
+    <link rel="stylesheet" href="./assets/css/colorswitcher.css">
+</head>
+<body>
+    <div class="overflow-hidden" style="min-height: 100vh;">
+        <div class="container">
+            <div class="step-counter" style="margin-left: 0;margin-bottom: 30px;">
+                <div class="step-counter-inner">
+                    <div class="steps-number active">
+                        1
+                    </div>
+                    <div class="steps-number">
+                        2
+                    </div>
+                    <div class="steps-number">
+                        3
+                    </div>
+                    <div class="steps-number">
+                        4
+                    </div>
+                </div>
+            </div>
+            <form enctype="multipart/form-data" method="post" id="steps">
+                <div class="wrapper show-section">
+                    <section class="steps step-1">
+                        <div class="steps-inner">
+                            <div class="main-heading">
+                                <span class="highlighted">Première</span> question
+                            </div>
+                            <div id="step1">
+                                <div id="jobs_list" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="carousel-caption d-block">
+                                                <div class="lightSpeedIn row">
+                                                    <div class="col-md-4">
+                                                        <div class="job-single">
+                                                            <input type="radio" name="q1" value="v1">
+                                                            <label>
+                                                                Réponse 1
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="job-single">
+                                                            <input type="radio" name="q1" value="v2">
+                                                            <label>
+                                                                Réponse 2
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="job-single">
+                                                            <input type="radio" name="q1" value="v3">
+                                                            <label>
+                                                                Réponse 3
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="job-single">
+                                                            <input type="radio" name="q1" value="v4">
+                                                            <label>
+                                                                Réponse 4
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="next-prev hide pop">
+                                <button type="button" class="next" id="step1btn">
+                                    Suivant <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="steps step-2">
+                        <div class="steps-inner">
+                            <div class="main-heading">
+                                <span class="highlighted">Deuxième</span> question
+                            </div>
+                            <div id="step2">
+                                <div id="jobs_list" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="carousel-caption d-block">
+                                                <div class="lightSpeedIn row">
+                                                    <div class="col-md-4">
+                                                        <div class="job-single">
+                                                            <input type="radio" name="q2"  value="v1">
+                                                            <img src="./assets/img/team(1).png" alt="sales">
+                                                            <label>
+                                                                Sales & Marketing
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="job-single">
+                                                            <input type="radio" name="q2" value="v2">
+                                                            <img src="./assets/img/java.png" alt="JS">
+                                                            <label>
+                                                                JavaScript Dev
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="job-single">
+                                                            <input type="radio" name="q2" value="v3">
+                                                            <img src="./assets/img/javascript.png" alt="UI">
+                                                            <label>
+                                                                UX / UI Designer
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="next-prev pop">
+                                <button type="button" class="prev">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <button id="step2btn" type="button" class="next">
+                                    Suivant <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="steps step-3">
+                        <div class="steps-inner">
+                            <div class="main-heading">
+                                <span class="highlighted">Troisième</span> question
+                            </div>
+                            <div id="step3" class="lightSpeedIn scroll-form">
+                                <div class="block">
+                                    <div class="text_input focus">
+                                        <label class="hide">
+                                            <i class="fa-solid fa-user"></i>Text
+                                        </label>
+                                        <input type="text" name="q3" placeholder="Saisissez la réponse">
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <div class="block_label">
+                                        Double choix
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 tab-50">
+                                            <div class="gender">
+                                                <label>
+                                                    Option 1
+                                                </label>
+                                                <input checked type="radio" name="q4" value="v1">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 tab-50">
+                                            <div class="gender">
+                                                <label>
+                                                    Option 2
+                                                </label>
+                                                <input type="radio" name="q4" value="v2">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 tab-100">
+                                            <div class="select_opt">
+                                                <select class="select_input" name="q5">
+                                                    <option disabled selected>
+                                                        Sélectionnez une valeur
+                                                    </option>
+                                                    <option value="usa">
+                                                        USA
+                                                    </option>
+                                                    <option value="cn">
+                                                        China
+                                                    </option>
+                                                    <option value="uk">
+                                                        United Kingdom
+                                                    </option>
+                                                    <option value="jp">
+                                                        Japan
+                                                    </option>
+                                                    <option value="de">
+                                                        Allemand
+                                                    </option>
+                                                    <option value="fr">
+                                                        France
+                                                    </option>
+                                                </select>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="next-prev pop">
+                                <button type="button" class="prev">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <button id="step3btn" type="button" class="next">
+                                    Suivant <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="steps step-4">
+                        <div class="steps-inner">
+                            <div class="main-heading">
+                                <span class="highlighted">Quatrième</span> question
+                            </div>
+                            <div id="step4" class="lightSpeedIn scroll-form">
+                                <div class="block">
+                                    <div class="text_input focus">
+                                        <label class="hide">
+                                            <i class="fa-solid fa-user"></i>
+                                            Choisir la température
+                                        </label>
+                                        <input type="range" id="my_range" name="range" min="-12" max="35" value="28">
+                                    </div>
+                                    <h6 class="text-primary"><span id="temp">28</span>°C</h6>
+                                </div>
+                            </div>
+
+                            <div class="next-prev pop">
+                                <button type="button" class="prev">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <button onclick="window.location.href = './thanksyou.html'" id="step2btn" type="button" class="next">
+                                    Valider <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="./assets/js/callswitcher.js"></script>
+    <script>
+        // Sélectionnez l'élément input et l'élément span
+        const rangeInput = document.getElementById('my_range');
+        const tempSpan = document.getElementById('temp');
+
+        // Ajoutez un écouteur d'événement sur l'élément input pour détecter les changements de valeur
+        rangeInput.addEventListener('input', function() {
+        // Mettez à jour le contenu du span avec la valeur actuelle de l'input range
+        tempSpan.textContent = rangeInput.value;
+        });
+
+    </script>
+</body>
+</html>
